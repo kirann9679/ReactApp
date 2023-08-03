@@ -14,20 +14,5 @@ export default function App() {
         setData(json);
       });
   });
-  useEffect(() => {
-    fetch(apiURL)
-      .then((response) => response.json())
-      .then((json) => {
-        setData(json);
-      });
-  });
-  useEffect(() => {
-    fetch(apiURL)
-      .then((response) => response.json())
-      .then((json) => {
-        setData(json);
-      });
-  });
-
   return <FilterableProductTable products={data} apiData={apiData} />;
 }
